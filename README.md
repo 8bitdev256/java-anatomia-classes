@@ -31,9 +31,7 @@ Exemplo: `final String BR = "Brasil"`;
     com.hypertech.notification.util
     com.hypertech.notification.service
 
-Para criar um pacote dentro do VS Code e ele automaticamente informar nas classes o pacote utilizado, deve-se criar uma pasta para cada "." do pacote.
-
-Exemplo:
+Para criar um pacote dentro do VS Code e ele automaticamente informar nas classes o pacote utilizado, deve-se criar uma pasta para cada "." do pacote. Exemplo:
 
     1 - Caso deseje criar o pacote "com.hypertech.notification.app", crie a pasta "com";
     
@@ -44,6 +42,24 @@ Exemplo:
     4 - Dentro da pasta "notification", crie a pasta "app";
     
     5 - Mova a classe que deseja inserir neste pacote para a pasta "app".
+
+### Convenção de nomenclatura de variáveis
+
+    1 - Sem abreviação do nome da variável. Correto: `salarioMedio`. Incorreto: `salMedio`;
+
+    2 - Não definir nomes "mágicos", como `x`, `abc`, etc.;
+
+    3 - Nome no singular, a menos que seja uma lista;
+
+    4 - Sempre escrever todas as variáveis do código no mesmo idioma.
+
+### Convenção de nomenclatura de métodos
+
+    1 - Nome no infinitivo. Exemplo: `adicionarCliente`, `excluirProduto`;
+
+    2 - Seguir padrão Camel Case, onde primeira palavra tem inicial minúscula e seguintes maiúscula;
+
+    3 - Devem sempre possuir uma única finalidade. Incorreto: Criar um método `calcularImprimir`, que calcula algo e imprime algo. Correto: criar um método `calcular` para realizar o cálculo, e um método `imprimir`, para realizar a impressão.
 
 ## Getting Started
 
