@@ -14,6 +14,37 @@ Keyword final: Usada para informar que uma variável possuirá valor constante, 
 
 Exemplo: `final String BR = "Brasil"`;
 
+### Convenção de nomenclatura de pacotes
+
+ - `com`: comercial
+
+ - `org`: organizacional ou opensource
+
+ - `opensource`: opensource
+
+ A nomenclatura é iniciada pelo tipo de projeto (conforme acima), seguido do nome da empresa, nome do projeto e funcionalidade do pacote.
+
+ Exemplo: Supondo que sua empresa se chame HyperTech e sua aplicação chame Notification, seus pacotes podem possuir nomes como os listados abaixo:
+
+    com.hypertech.notification.app
+    com.hypertech.notification.model
+    com.hypertech.notification.util
+    com.hypertech.notification.service
+
+Para criar um pacote dentro do VS Code e ele automaticamente informar nas classes o pacote utilizado, deve-se criar uma pasta para cada "." do pacote.
+
+Exemplo:
+
+    1 - Caso deseje criar o pacote "com.hypertech.notification.app", crie a pasta "com";
+    
+    2 - Dentro da pasta "com", crie a pasta "hypertech";
+    
+    3 - Dentro da pasta "hypertech", crie a pasta "notification";
+    
+    4 - Dentro da pasta "notification", crie a pasta "app";
+    
+    5 - Mova a classe que deseja inserir neste pacote para a pasta "app".
+
 ## Getting Started
 
 Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
